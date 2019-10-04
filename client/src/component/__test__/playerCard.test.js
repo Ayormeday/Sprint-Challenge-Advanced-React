@@ -7,7 +7,7 @@ let tools;
 
 beforeEach(() => {
   rtl.cleanup();
-  tools = rtl.render(<Player name="Peter" country='Nigeria' searches={100} />);
+  tools = rtl.render(<Player name="Josh" country="Nigeria" searches={100} />);
 });
 
 describe("PlayerCard component", () => {
@@ -16,17 +16,17 @@ describe("PlayerCard component", () => {
   });
 
   it("shows the correct name", () => {
-    const elementWithJoshText = tools.queryByText(/peter/i);
+    const elementWithJoshText = tools.queryByText(/josh/i);
     expect(elementWithJoshText).toBeInTheDocument();
   });
 
   it("it shows the correct country", () => {
-    const elementWithZero = tools.queryByText(/Nigeria/i);
-    expect(elementWithZero).toBeInTheDocument();
+    const elementWithNigeria = tools.queryByText(/Nigeria/i);
+    expect(elementWithNigeria).toBeInTheDocument();
   });
 
   it("it shows the correct searches", () => {
-    const elementWithZero = tools.queryByText(/100/);
-    expect(elementWithZero).toBeInTheDocument();
+    const elementWithHundred = tools.queryByText(/100/);
+    expect(elementWithHundred).toBeInTheDocument();
   });
 });

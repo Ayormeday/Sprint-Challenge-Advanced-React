@@ -1,5 +1,5 @@
-import React from 'react';
-import App from './App';
+import React from "react";
+import App from "./App";
 import "@testing-library/jest-dom/extend-expect";
 import * as rtl from "@testing-library/react";
 
@@ -9,8 +9,8 @@ beforeEach(() => {
   tools = rtl.render(<App />);
 });
 
-describe('Counter component', () => {
-  it('runs', () => {
+describe("App component", () => {
+  it("runs", () => {
     tools.debug();
   });
 });
