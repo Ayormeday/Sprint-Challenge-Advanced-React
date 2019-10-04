@@ -5,8 +5,8 @@ const Player = ({ name, country, searches }) => {
   return (
       <div className="player">
         <div className="player-info">
-          <h3 className="name">{name}</h3>
-          <p className="country">Country: {country}</p>
+          <h2 className="name">{name}</h2>
+          <h4 className="country">Country: {country}</h4>
           <p>Searches {searches}</p>
         </div>
       </div>
